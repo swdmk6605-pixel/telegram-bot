@@ -1,4 +1,3 @@
-cat > /home/claude/telegram_bot/bot.py << 'ENDOFFILE'
 import os
 import sqlite3
 import asyncio
@@ -271,5 +270,4 @@ def main():
 
 if __name__ == "__main__":
     main()
-ENDOFFILE
-echo "Done"
+    
