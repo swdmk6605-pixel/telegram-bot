@@ -264,7 +264,6 @@ def main():
     app.add_handler(CommandHandler("start", start))
     app.add_handler(CallbackQueryHandler(button_handler))
     app.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, handle_message))
-    app.job_queue.run_repeating(check_subscriptions, interval=3600, first=10)
     print("✅ البوت يعمل...")
     app.run_polling(allowed_updates=Update.ALL_TYPES)
 
